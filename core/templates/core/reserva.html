@@ -1,0 +1,35 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+
+
+    <div class="main">  
+        {% load static %}
+        <div class="container">
+            <center>
+          <h2 class="texto">Formulario de reserva</h2>
+          <form action="mail.php" enctype="multipart/form-data" method="post" name="formulario_html5" autocomplete="off">
+            <label for="nombre" class="texto">Nombre Completo</label></br>
+            <input type="text" name="nombre" id="nombre" class="cajas"></br>
+          
+            <label for="rut" class="texto">Rut con guíon </label></br>
+            <input type="text" name="rut" id="rut" class="cajas"></br>
+
+            <label for="email">Email</label></br>
+            <input type="email" name="email" id="email" class="cajas"></br>
+      
+            <label for="telefono">Teléfono</label></br>
+            <input type="number" name="telefono" id="telefono" class="cajas"></br>
+            
+            <label for="llegada">Fecha y hora de llegada</label></br>
+            <input type="datetime-local" id="llegada" name="fecha-hora-llegada" class="cajas">
+            </br>
+      
+      </form>
+      
+            
+    </center>
+        </div>
+      </div>
+
+ {% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+ <main> 
+    {% load static%}
+    <div class="contenedor">
+        <center class="texto color"><br>
+            ¡Crea tu cuenta para enterarte del progreso!
+        </center>
+        <div class="contcrear">
+            <div class="contenedortexto">
+                <img src="{% static 'logo/logoServ.png' %}" width="400px" height="300px" />
+                <center>
+                    <p class="texto color">Si tienes problemas con tu cuenta habla con soporte tecnico.</p>
+                </center>
+            </div>
+            <div class="contenedorformulario">
+                <div class="inputcrear">
+                    <input type="text" placeholder="Rut" class="cajanuevac" />
+                    <input type="text" placeholder="Nombre completo" class="cajanuevac"/>
+                    <input type="text" placeholder="Correo electronico o numero" class="cajanuevac"/>
+                    <input type="password" placeholder="Contraseña" class="cajanuevac"/>
+                    <a href="{% url 'inicio' %}">
+                        <button class="cajaboton">Crear cuenta</button>
+                    </a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+{% endblock %}
